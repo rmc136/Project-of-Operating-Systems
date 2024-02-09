@@ -1,0 +1,19 @@
+#!/bin/bash
+
+### Grupo: SO-TI-40
+### Aluno 1: João Ferreira (fc54600)
+### Aluno 2: João Assunção (fc56902)
+### Aluno 3: Diogo Piçarra (fc60858)
+
+PYTHON="python3"
+PROGRAM="pwordcount.py"
+
+if [ $# -lt 1  ]
+then
+    echo "Por favor insira os respetivos argumentos"
+elif [ -e $PROGRAM ]
+then
+    ${PYTHON} ${PROGRAM} $@
+else
+    echo "O ficheiro não existe"
+fi
